@@ -98,6 +98,9 @@ template <typename Dtype>
 Dtype caffe_cpu_dot(const int n, const Dtype* x, const Dtype* y);
 
 template <typename Dtype>
+Dtype caffe_cpu_vec_sum(const int n, const Dtype* x);
+
+template <typename Dtype>
 Dtype caffe_cpu_strided_dot(const int n, const Dtype* x, const int incx,
     const Dtype* y, const int incy);
 
