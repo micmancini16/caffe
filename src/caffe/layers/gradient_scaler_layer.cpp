@@ -14,7 +14,7 @@ namespace caffe {
   }
 
   template <typename Dtype>
-  void GradientScalerLayer<Dtype>::Backward_gpu(const vector<Blob<Dtype>*>& top,
+  void GradientScalerLayer<Dtype>::Backward_cpu(const vector<Blob<Dtype>*>& top,
         const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom) {
     if (propagate_down[0]) {
       const int count = top[0]->count();
